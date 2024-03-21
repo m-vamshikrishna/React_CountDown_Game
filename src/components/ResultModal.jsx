@@ -1,6 +1,6 @@
 import { forwardRef, useImperativeHandle, useRef } from "react"
 import { createPortal } from "react-dom";
-const ResultModal = forwardRef(function ({result,targetTime,remainingTime,onReset},ref)
+const ResultModal = forwardRef(function ({targetTime,remainingTime,onReset},ref)
 {
     const dialog = useRef();
     const score = Math.floor((1 - remainingTime/(targetTime*1000))*100);

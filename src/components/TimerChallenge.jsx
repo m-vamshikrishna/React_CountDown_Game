@@ -29,7 +29,7 @@ export default function TimerChallenge({title,targetTime})
     }
 
     return <>
-    <ResultModal ref={dialog} result="lost" targetTime={targetTime} remainingTime={timerRemaining} onReset={handleReset}/>
+    <ResultModal ref={dialog} targetTime={targetTime} remainingTime={timerRemaining} onReset={handleReset}/>
     
     <section className="challenge">
     <h2>{title}</h2>
